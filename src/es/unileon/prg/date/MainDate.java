@@ -8,7 +8,7 @@ public class MainDate {
 		Date anotherDate;
 
 		try {
-			today = new Date(9, 11, 2017);
+			today = new Date(9, 5, 2017);
 			anotherDate=new Date(today);
 			System.out.println("Fecha today "+today.toString());
 			System.out.println("Fecha anotherDate "+anotherDate.toString());
@@ -20,6 +20,16 @@ public class MainDate {
 			System.out.println(today.isSameM(anotherDate));
 			System.out.println(today.isSameD(anotherDate));
 			System.out.println(today.isSameFecha(anotherDate));
+			System.out.println(today.nombreMes());
+			System.out.println(today.isDayRigth());
+			System.out.println(today.seasonOfMonth());
+			System.out.println(today.monthsUntilEnd());
+			System.out.println(today.allDates());
+			System.out.println(today.sameDays());
+			System.out.println(today.numberOfDays());
+			System.out.println(today.numberAttemps());
+			System.out.println(today.numberAttempsDo());
+			System.out.println(today.dayOfWeek());
 		} catch (DateException e) {
 			System.out.println(e.getMessage());
 		}
